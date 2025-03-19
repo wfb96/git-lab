@@ -1,0 +1,24 @@
+1. What does git add do, and why is it necessary before committing?
+
+Adds changes made to a file locally to the staging area and marks them to be included in the following commit.
+It makes it possible to make changes to the files in the staging area before they're permanently written to the
+repository.
+
+2. What does git commit do, and why is it necessary before pushing?
+
+"Commits" changes made to files added to the staging area to the local repository. It allows you to return your
+project to a previous state before it's pushed to the remote repository. This is helpful for identifying and 
+reverting a project because it allows you to identify a particular "commit" where a bug began occuring.
+
+3. What is the difference between git clone and git pull, and when should each be used?
+
+Git clone provides a local copy of an existing remote repository for you to work in. Typically used once when you
+begin work on a project but can also be used to "start fresh" if you've introduced issues in your local copy. 
+Git pull updates the local copy of the remote repository with any new commits made in the remote repository
+without removing the local copy entirely. Pull is useful when collaborating with others in real time.
+
+4. How can you verify that a git pull was successful after making changes on GitHub?
+
+Verify that changes made are reflected in your local copy of the files -- similar to step 9 where we modified a 
+file and then issued a pull command, then verified that the changes made (in our case changes made in the browser)
+were reflected in the local files.
